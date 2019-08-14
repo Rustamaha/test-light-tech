@@ -1,0 +1,88 @@
+/*@font-face {
+  font-family: 'Stalinist One';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/StalinistOne.ttf') format('ttf');
+}*/
+
+/*@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/Montserrat.ttf') format('ttf');
+}*/
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Stalinist+One&display=swap');
+
+$black: #484848;
+$red: #FD1C44;
+$yellow: #F7CC20;
+$green: #8BAF33;
+
+h1 {
+	font-family: 'Montserrat';
+	font-weight: bold;
+	font-style: normal;
+	font-size: 16px;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat';
+	font-weight: normal;
+	font-style: normal;
+	font-size: 14px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  display: block;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+} 	
+
+.row::after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+[class*='col-'] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 601px) {
+  .col-s-1 { width: 8.33%; }
+  .col-s-2 { width: 16.66%; }
+  .col-s-3 { width: 25%; }
+  .col-s-4 { width: 33.33%; }
+  .col-s-5 { width: 41.66%; }
+  .col-s-6 { width: 50%; }
+  .col-s-7 { width: 58.33%; }
+  .col-s-8 { width: 66.66%; }
+  .col-s-9 {width: 75%; }
+  .col-s-10 { width: 83.33%; }
+  .col-s-11 { width: 91.66%; }
+  .col-s-12 { width: 100%; }
+}
+
+@media only screen and (min-width: 768px) {
+	.col-1 { width: 8.33%; }
+	.col-2 { width: 16.66%; }
+	.col-3 { width: 25%; }
+	.col-4 { width: 33.33%; }
+	.col-5 { width: 41.66%; }
+	.col-6 { width: 50%; }
+	.col-7 { width: 58.33%; }
+	.col-8 { width: 66.66%; }
+	.col-9 { width: 75%; }
+	.col-10 { width: 83.33%; }
+	.col-11 { width: 91.66%; }
+	.col-12 { width: 100%; }
+}

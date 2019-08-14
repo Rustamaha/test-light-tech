@@ -1,0 +1,15 @@
+.sushi {
+	font-family: 'Stalinist One';
+	font-size: 16px;
+	display: flex;
+	padding-top: 110px;
+
+	&__card {
+		padding-top: 45px; 
+		display: block;
+		width: 170px;
+		height: 200px;
+		//float: left;
+	}
+	
+}

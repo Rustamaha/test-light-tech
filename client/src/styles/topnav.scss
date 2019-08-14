@@ -1,0 +1,65 @@
+.topnav {
+	margin: 0;
+  padding: 0;
+	width: 100%;
+	background: white;
+	padding-left: 140px;
+
+	&__ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+  	overflow: hidden;
+	}
+
+	&__li {
+		float: left;
+		align-items: center;
+		padding-right: 20px;
+	}
+
+	&__a {
+		height: 40px;
+		padding-top: 10px;
+		text-decoration: none;
+		display: block;
+		color: $black;
+
+		&_active {
+			color: $red;
+		}
+
+		&_contacts {
+			padding-left: 190px;
+		}
+	}
+
+	&__phone {
+		color: $red;
+	}
+
+	&__user {
+		color: $red;
+	}
+
+	&__active-basket {
+		width: 110px;
+		text-align: center;
+		background: $red;
+		color: white;
+	}
+}
+
+@media only screen and (max-width: 984px) {
+	.topnav {
+		padding-left: 50px;
+
+		&__a_contacts {
+			padding-left: 20px;
+		}
+	}
+}
+
+@media only screen and (max-width: 778px) {
+
+}
