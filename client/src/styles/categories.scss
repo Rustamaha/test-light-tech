@@ -10,15 +10,14 @@
 		margin: 0;
 		padding: 0;
   	overflow: hidden;
-  	align-items: center;
+  	display: flex;
 	}
 
 	&__li {
-		float: left;
-		
+		text-align: center;
 	}
 
-	&__a {
+	&__link {
 		display: block;
 		width: 170px;
 		height: 120px;
@@ -34,10 +33,6 @@
 			background: #ED143A;
 		}
 	}
-
-	&__img {
-		padding-left: 55px;
-	}
 }
 
 @media only screen and (max-width: 984px) {
@@ -50,12 +45,20 @@
 	.categories {
 		padding-left: 0;
 
-		&__a {
-			width: 100px;
+		&__link {
+			width: 95px;
+		}
+	}
+}
+
+@media only screen and (max-width: 320px) {
+	.categories {
+		&__link {
+			width: 60px;
 		}
 
 		&__img {
-		padding-left: 20px;
+		padding-left: 0;
 		}
 	}
 }

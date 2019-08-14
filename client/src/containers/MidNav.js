@@ -5,16 +5,21 @@ import logo from '../images/logo.png';
 const MidNav = () => {
 	return (
 		<div className='midnav'>
-			<div>
-				<ul className='midnav__ul'>
-					<li className='midnav__li'><a className='midnav__a midnav__a_home' href='#home'><img src={logo} alt='japanito' /></a></li>
-       		<li className='midnav__li'><a className='midnav__a' href='#home'>Главная</a></li>
-       		<li className='midnav__li'><a className='midnav__a' href='#menu'>Меню</a></li>
-       		<li className='midnav__li'><a className='midnav__a' href='#news'>Новости</a></li>
-       		<li className='midnav__li'><a className='midnav__a' href='#offers'>Акции</a></li>
-       		<li className='midnav__li'><a className='midnav__a' href='#restaurants'>Рестораны</a></li>
-       		<li className='midnav__li'><a className='midnav__a' href='#area'>География доставки</a></li>
+			<div className='midnav__navbar'>
+				<ul className='midnav__ul midnav__ul_left'>
+					<li className='midnav__li'><a className='midnav__link midnav__link_home' href='#home'><img className='midnav__logo' src={logo} alt='japanito' /></a></li>
        	</ul>
+        <ul className='midnav__ul midnav__ul_right'>
+          <li className='midnav__li'><a className='midnav__link' href='#home'>Главная</a></li>
+       		<li className='midnav__li'><a className='midnav__link' href='#menu'>Меню</a></li>
+       		<li className='midnav__li'><a className='midnav__link' href='#news'>Новости</a></li>
+       		<li className='midnav__li'><a className='midnav__link' href='#offers'>Акции</a></li>
+       		<li className='midnav__li'><a className='midnav__link' href='#restaurants'>Рестораны</a></li>
+       		<li className='midnav__li'><a className='midnav__link' href='#area'>География доставки</a></li>
+       	</ul>
+        <ul className='midnav__ul midnav__ul_bars'>
+          <i className="fas fa-bars"></i>
+        </ul>
       </div>
       <div>
        	<div className='midnav__text-block'>

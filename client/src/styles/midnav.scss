@@ -5,27 +5,37 @@
 	background-repeat: no-repeat;
   background-origin: content-box;
   background-position: left-top;
-  background-size: 100%;
+  background-size: 100% 100%;
+
+  &__navbar {
+    display: flex;
+  }
 
   &__ul {
 		list-style-type: none;
+    display: flex;
 		margin: 0;
-		padding: 0;
   	overflow: hidden;
+    padding-top: 35px;
+
+    &_left {
+      padding-left: 140px;
+    }
+
+    &_bars {
+      display: none;
+    }
 	}
 
 	&__li {
-		float: left;
-		align-items: center;
 		padding-right: 20px;
 	}
 
-  &__a {
+  &__link {
   	font-size: 14px;
   	text-decoration: none;
 		display: block;
 		color: $black;
-		padding-top: 35px;
 
 		&:hover {
 			color: $red;
@@ -34,11 +44,6 @@
     &:active {
       color: #ED143A;
     }
-
-  	&_home {
-  		padding-left: 140px;
-  		padding-right: 80px;
-  	}
   }
 
   &__text-block {
@@ -73,6 +78,7 @@
   }
 
   &__button {
+    cursor: pointer;
   	color: white;
   	background: $red;
   	border-style: none;
@@ -85,20 +91,84 @@
   }
 }
 
+@media only screen and (max-width: 905px) {
+  .midnav {
+
+    &__ul {
+
+      &_left {
+        padding-left: 20px;
+        flex-grow: 1;
+      }
+
+      &_right {
+        display: none;
+      }
+
+      &_bars {
+        display: block;
+        padding-right: 50px;
+        cursor: pointer;
+
+        &:hover {
+          color: white;
+        }
+      }
+    }
+
+    &__text-block {
+      padding-left: 20px;
+    }
+
+    &__img-sushi {
+      left: 250px;
+    }  
+  }
+}
+
+@media only screen and (max-width: 667px) {
+  .midnav {
+    &__img-sushi {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .midnav {
+    height: auto;
+  }
+}
+
 @media only screen and (max-width: 320px) {
   .midnav {
     background-size: 100%;
     padding-left: 0;
 
-    &__text-block {
-      padding-left: 10px;
+    &__ul {
+      padding-top: 15px;
+
+      &_left {
+        padding-left: 20px;
+      }
+
+      &_right {
+        display: none;
+      }
     }
 
-    &__a_home {
-      padding-left: 0;
+    &__text-block {
+      padding-left: 20px;
+      font-size: 15px;
+      width: 100%;
+
+      &_red {
+        font-size: 15px;
+      }
     }
-    &__img-sushi {
-      display: none;
+
+    &__button-position {
+      padding-top: 8px;
     }
   }
 }

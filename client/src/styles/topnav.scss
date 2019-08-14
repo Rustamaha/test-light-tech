@@ -4,33 +4,35 @@
 	width: 100%;
 	background: white;
 	padding-left: 140px;
+	display: flex;
 
 	&__ul {
 		list-style-type: none;
 		margin: 0;
 		padding: 0;
   	overflow: hidden;
+  	display: flex;
+  	flex-grow: 1;
+
+  	&_right {
+  		padding-right: 90px;
+  	}
 	}
 
 	&__li {
-		float: left;
-		align-items: center;
 		padding-right: 20px;
 	}
 
-	&__a {
+	&__link {
 		height: 40px;
 		padding-top: 10px;
 		text-decoration: none;
 		display: block;
 		color: $black;
 
-		&_active {
+		&:hover,
+		&:active {
 			color: $red;
-		}
-
-		&_contacts {
-			padding-left: 190px;
 		}
 	}
 
@@ -50,16 +52,29 @@
 	}
 }
 
-@media only screen and (max-width: 984px) {
+@media only screen and (max-width: 890px) {
 	.topnav {
-		padding-left: 50px;
+		padding-left: 30px;
 
-		&__a_contacts {
-			padding-left: 20px;
+		&__ul {
+
+			&_right {
+				padding-right: 50px;
+			}
 		}
 	}
 }
 
-@media only screen and (max-width: 778px) {
+@media only screen and (max-width: 764px) {
+	.topnav {
+		padding-left: 20px;
 
+		&__ul {
+			flex-direction: column;
+		}
+
+		&__li {
+			padding-bottom: 5px;
+		}
+	}
 }
