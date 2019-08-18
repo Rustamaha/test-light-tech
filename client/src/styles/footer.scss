@@ -1,0 +1,113 @@
+.footer {
+	width: 100%;
+	display: flex;
+	box-shadow: 0 -5px 10px 2px #F7F7F7;
+
+	&__row {
+		padding-right: 50px;
+		padding-top: 45px;
+		display: flex;
+		flex-direction: column;
+
+		&_social {
+			flex-direction: row;
+			padding-top: 10px;
+		}
+
+		&_contacts {
+			padding-left: 140px;
+		}
+
+		&_menu-right,
+		&_menu-left {
+			font-weight: bold;
+		}
+
+		&_buttons {
+			padding-right: 0;
+		}
+	}
+
+	&__cell {
+		padding-bottom: 10px;
+		display: block;
+
+		&_social {
+			padding-right: 15px;
+		}
+
+		&_input {
+			display: flex;
+			height: 40px;
+		}
+	}
+
+	&__logo {
+		background-image: url('../images/logo.png');
+		background-repeat: no-repeat;
+		background-origin: content-box;
+		display: block;
+		width: 210px;
+		height: 45px;
+	}
+
+	&__phone,
+	&__vk,
+	&__fb,
+	&__instg {
+		color: $red;
+
+		&:hover {
+		color: #FF3F5F;
+		}
+
+		&:active {
+		color: $red;
+		}
+	}
+
+	&__link {
+		text-decoration: none;
+		display: block;
+		color: $black;
+	}
+
+	&__input-search {
+		color: #c8c8c8;
+
+		&:active {
+			color: #7f7f7f;
+		}
+	}
+
+	&__input-button {
+		background: $red;
+		border-style: none;
+		width: 30px;
+		color: white;
+
+		&:hover {
+		 background: #FF3F5F;
+		}
+	}
+
+	&__review-button {
+		width: 198px;
+		height: 40px;
+		background: $red;
+		border-style: none;
+		color: white;
+	}
+}
+
+@media only screen and (max-width: 834px) {
+	.footer {
+
+		&__row {
+
+			&_contacts {
+				padding-left: 50px;
+			}
+		}
+	}
+}

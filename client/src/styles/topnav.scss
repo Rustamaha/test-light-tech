@@ -34,6 +34,19 @@
 		&:active {
 			color: $red;
 		}
+
+		&_basket {
+			width: 110px;
+			text-align: center;
+			background: $red;
+			color: white;
+
+			&:hover,
+			&:active {
+				color: white;
+		}
+
+		}
 	}
 
 	&__phone {
@@ -42,13 +55,6 @@
 
 	&__user {
 		color: $red;
-	}
-
-	&__active-basket {
-		width: 110px;
-		text-align: center;
-		background: $red;
-		color: white;
 	}
 }
 

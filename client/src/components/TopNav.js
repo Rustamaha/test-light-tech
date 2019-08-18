@@ -12,7 +12,7 @@ export default class TopNav extends React.Component {
         <ul className='topnav__ul topnav__ul_right'>
         	<li className='topnav__li'><a className='topnav__link' href='#contacts'><i className="fas fa-phone topnav__phone"></i> 8-800-900-500-5</a></li>
         	<li className='topnav__li'><a className='topnav__link' href='#user'>Александр <i className="fas fa-user-alt topnav__user"></i></a></li>
-        	<li className='topnav__li'><a className='topnav__link topnav__active-basket' href='#purchases'>2500 <i className="fas fa-ruble-sign"></i> <i className="fas fa-shopping-bag"></i></a></li>
+        	<li className='topnav__li'><a className='topnav__link topnav__link_basket' href='#purchases'>2500 <i className="fas fa-ruble-sign"></i> <i className="fas fa-shopping-bag"></i></a></li>
         </ul>
       </div>
 		);
