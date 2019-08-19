@@ -6,7 +6,7 @@ import SushiProducts from '../containers/SushiProducts';
 import Footer from '../containers/Footer';
 
 const App = () => (
-	<div className='container'>
+	<div>
 		<TopNav />
 		<MidNav />
 		<Categories />
