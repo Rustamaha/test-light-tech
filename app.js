@@ -2,7 +2,6 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 require('dotenv').config();
-//const MONGODB_URI = 'mongodb+srv://ruslyandiya_31:xhR2DV3hxHDD6Pd@test-cluster-rustamaha-svafi.gcp.mongodb.net/test?retryWrites=true&w=majority';
 
 mongoose.Promise = global.Promise;
 mongoose.connect(process.env.DB_URI, { useNewUrlParser: true });
