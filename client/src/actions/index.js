@@ -13,6 +13,7 @@ export const fetchProducts = () => dispatch => {
 	dispatch(fetchProductsRequest());
 	return fetch('/api/products')
 		.then(res => res.json())
-		.then(json =>
-			dispatch(fetchProductsSuccess(json)));
+		.then(data => {
+			dispatch(fetchProductsSuccess(data));
+		});
 };

@@ -5,6 +5,7 @@ import logo from '../images/logo.png';
 const MidNav = () => {
 	return (
 		<div className='midnav'>
+      <div className='midnav__main-img'>
 			<div className='midnav__navbar'>
 				<ul className='midnav__ul midnav__ul_left'>
 					<li className='midnav__li'><a className='midnav__link midnav__link_home' href='#home'><img className='midnav__logo' src={logo} alt='japanito' /></a></li>
@@ -29,6 +30,7 @@ const MidNav = () => {
        		</div>
        		<div className='midnav__img-sushi'></div>
        	</div>
+      </div>
       </div>
     </div>
 	);

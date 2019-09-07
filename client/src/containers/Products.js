@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import Component from '../components/SushiProducts';
+import Component from '../components/Products';
 import { fetchProducts } from '../actions';
 
 const mapDispatchToProps = dispatch => ({

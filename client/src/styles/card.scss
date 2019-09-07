@@ -1,0 +1,85 @@
+.card {
+	padding-right: 20px;
+	padding-top: 45px; 
+	display: block;
+	width: 160px;
+	height: 200px;
+	font-size: 14px;
+	font-weight: bold;
+	color: $black;
+
+	&__header {
+		display: flex;
+		padding-right: 30px;
+	}
+
+	&__weight {
+		flex-grow: 1;
+	}
+
+	&__ribbon {
+		color: white;
+		width: 40px;
+		text-align: center;
+
+		&_green {
+			background: $green;
+		}
+
+		&_yellow {
+			background: $yellow;
+		}
+	}
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		height: 140px;
+	}
+
+	&__img {
+		height: 120px;
+	}
+
+	&__last-name {
+		font-weight: normal;
+	}
+
+	&__footer {
+		display: flex;
+		padding-right: 30px;
+		padding-top: 50px;
+	}
+
+	&__price {
+		font-size: 15px;
+		color: $red;
+		flex-grow: 1;
+	}
+
+	&__counter {
+		color: $black;
+	}
+}
+
+@media only screen and (max-width: 810px) {
+	.card {
+		padding-right: 0;
+		height: 250px;
+
+		&__header {
+			padding-right: 10px;
+		}
+
+		&__footer {
+			padding-right: 10px;
+			padding-top: 30px;
+		}
+	}
+}
+
+@media only screen and (max-width: 375px) {
+	.card {
+		width: 140px;
+	}
+}

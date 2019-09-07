@@ -1,0 +1,157 @@
+.products {
+	padding-left: 140px;
+
+	&__roll-header,
+	&__sushi-header {
+		display: flex;
+		width: 100%;
+		color: $red;
+	}
+
+	&__sushi,
+	&__roll {
+		padding-top: 110px;
+		width: 100%;
+		display: block;
+	}
+
+	&__roll {
+		padding-bottom: 110px;
+	}
+
+	&__roll-name,
+	&__sushi-name {
+		font-family: 'Stalinist One';
+		font-size: 16px;
+		display: inline-flex;
+		border-bottom: 3px solid $red;
+    position: relative;
+
+    &:after {
+    	width: 0;
+    	height: 0;
+    	border-left: 6px solid transparent;
+    	border-right: 6px solid transparent;
+    	border-top: 6px solid white;
+    	transform: rotate(-45deg);
+  		-webkit-transform: rotate(-45deg);
+    	content: '';
+    	right: -5px;
+    	position: absolute;
+    	bottom: -5px;
+		}
+
+		&_border {
+			content: '';
+			width: 75%;
+			position: absolute;
+			bottom: -10px;
+		}
+	}
+
+	&__filter {
+		font-size: 13px;
+		font-weight: bold;
+		align-items: center;
+		display: inline-flex;
+		padding-right: 400px;
+		margin-left: auto;
+	}
+
+	&__plus {
+		font-size: 20px;
+		padding-left: 10px;
+	}
+
+	&__list {
+		padding-top: 45px;
+		display: flex;
+		flex-direction: row;
+	}
+}
+
+@media only screen and (max-width: 1024px) {
+	.products {
+
+		&__filter {
+			padding-right: 300px;
+		}
+	}
+}
+
+@media only screen and (max-width: 984px) {
+	.products {
+		padding-left: 50px;
+	}
+}
+@media only screen and (max-width: 900px) {
+	.products {
+		padding-left: 10px;
+
+		&__filter {
+			padding-right: 100px;
+		}
+
+		&__card {
+			width: 160px;
+		}
+	}
+}
+
+@media only screen and (max-width: 810px) {
+	.products {
+		
+		&__sushi,
+		&__roll {
+			width: 50%;
+			display: inline-block;
+			padding-top: 50px;
+		}
+
+		&__filter {
+			padding-right: 50px;
+		}
+
+		&__sushi-header,
+		&__roll-header {
+			flex-direction: row;
+		}
+
+		&__roll-header {
+			padding-left: 10px;
+		}
+
+		&__sushi {
+			border-right: 1px solid $red;
+		}
+
+		&__list {
+			align-items: center;
+			flex-direction: column;
+		}
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.products {
+		&__filter {
+			padding-right: 10px;
+		}
+	}
+}
+
+@media only screen and (max-width: 390px) {
+	.products {
+		&__sushi-header,
+		&__roll-header {
+			display: block;
+			margin: 0;
+			padding: 0;
+			word-spacing: 70px;
+		}
+
+		&__filter {
+			padding-right: 30px;
+		}
+	}
+}

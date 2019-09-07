@@ -1,9 +1,9 @@
 const Product = require('../database/models/product');
-const url = 'https://cloud.mail.ru/public/foQh/3Y4d6BUtK';
 
 module.exports = {
     async index(req, res){
-      Product.find({}, (err, docs) => res.json(docs));
+      const docs = await Product.find({})
+        .then(docs => res.json(docs));
     },
 
     async create(req, res){
@@ -21,23 +21,13 @@ module.exports = {
 
     async edit(req, res){
     	const { id } = req.params;
-      Product.findByIdAndUpdate(id, req.body, { new: true }, (err, doc) => {
-        if (err) {
-          throw err;
-        } else {
-          res.json(doc);
-        }
-      });
+      Product.findByIdAndUpdate(id, req.body, { new: true })
+        .then(doc => res.json(doc));
     },
 
     async delete(req, res){
     	const { id } = req.params;
-      Product.findByIdAndDelete(id, (err, doc) => {
-        if (err) {
-          throw err;
-        } else {
-          res.json(doc);
-        }
-      });
+      Product.findByIdAndDelete(id)
+        .then(doc => res.json(doc));
     }
 }
