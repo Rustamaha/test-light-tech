@@ -96,6 +96,7 @@
 	&__input-search {
 		color: $lightGray;
 		height: 60px;
+		width: 180px;
 
 		&:active {
 			color: $darkGray;
@@ -115,7 +116,7 @@
 	}
 
 	&__review-button {
-		width: 203px;
+		width: 210px;
 		height: 60px;
 		background: $red;
 		border-style: none;
@@ -221,15 +222,21 @@
 			}
 		}
 
+		&__logo {
+				margin-left: auto;
+				margin-right: auto;
+		}
+
 		&__cell {
-			align-items: center;
-			
-			&_logo {
-				align-items: center;
-			}
 
 			&_input {
 				display: block;
+			}
+		}
+
+		&__link {
+			&_home {
+				align-items: center;
 			}
 		}
 	}

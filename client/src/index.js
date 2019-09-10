@@ -8,6 +8,7 @@ import App from './components/App';
 import reducer from './reducers';
 import './styles/index.scss';
 import * as serviceWorker from './serviceWorker';
+import { fetchProducts } from './actions';
 
 const loggerMiddleware = createLogger();
 
@@ -15,6 +16,8 @@ const store = createStore(
 	reducer,
 	applyMiddleware(thunkMiddleware, loggerMiddleware),
 );
+
+store.dispatch(fetchProducts);
 
 ReactDOM.render(
 	<Provider store={store}>

@@ -15,7 +15,7 @@ app.listen(process.env.PORT, () => {
   console.log(`Listening on port`, process.env.PORT);
 });
 
-/*const description = {
+const description = {
   'Sushi_abokado.jpg': {
     name: 'Абокадо с авокадо',
     price: 55,
@@ -108,4 +108,4 @@ const readImgAndStore = async dirPath => {
     }));
 };
 
-readImgAndStore(imgsDir);*/
+readImgAndStore(imgsDir);

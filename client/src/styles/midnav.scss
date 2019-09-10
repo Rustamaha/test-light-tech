@@ -3,6 +3,17 @@
   position: relative;
   overflow: hidden;
 
+  &__toggle-menu {
+
+    &_none {
+      display: none;
+    }
+
+    &_active {
+      display: none;
+    }
+  }
+
   &__main-img {
     height: 350px;
     background-image: url('../images/pille-riin.jpg');
@@ -120,6 +131,29 @@
 @media only screen and (max-width: 760px) {
   .midnav {
 
+    &__link {
+      cursor: pointer;
+    }
+
+    &__toggle-menu {
+      
+      &_none {
+        display: none;
+      }
+
+      &_active {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+    &__nav-block {
+      display: block;
+      padding-bottom: 20px;
+      text-align: center;
+      align-items: center;
+    }
+
     &__ul {
 
       &_right {
@@ -187,10 +221,6 @@
 
       &_left {
         padding-left: 20px;
-      }
-
-      &_right {
-        display: none;
       }
     }
 
