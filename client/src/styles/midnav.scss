@@ -3,17 +3,6 @@
   position: relative;
   overflow: hidden;
 
-  &__toggle-menu {
-
-    &_none {
-      display: none;
-    }
-
-    &_active {
-      display: none;
-    }
-  }
-
   &__main-img {
     height: 350px;
     background-image: url('../images/pille-riin.jpg');
@@ -133,31 +122,19 @@
 
     &__link {
       cursor: pointer;
-    }
-
-    &__toggle-menu {
-      
-      &_none {
-        display: none;
-      }
-
-      &_active {
-        display: flex;
-        flex-direction: column;
-      }
-    }
-
-    &__nav-block {
-      display: block;
-      padding-bottom: 20px;
-      text-align: center;
-      align-items: center;
+      padding-top: 10px;
+      color: white;
     }
 
     &__ul {
 
       &_right {
         display: none;
+      }
+
+      &_active {
+        display: flex;
+        flex-direction: column;
       }
 
       &_bars {
@@ -170,20 +147,49 @@
         }
       }
     }
+
+    &__text-block {
+      padding-left: 20px;
+      padding-top: 0;
+    }
+
+    &__button-position {
+      padding-top: 50px;
+    }
+
+    &__text {
+      display: none;
+    }
   }
 }
 
 @media only screen and (max-width: 667px) {
   .midnav {
 
+    &__logo {
+      width: 150px;
+    }
+
+    &__link {
+      padding-top: 5px;
+    }
+
     &__img-sushi {
       display: none;
+    }
+
+    &__button-position {
+      padding-top: 30px;
     }
   }
 }
 
 @media only screen and (max-width: 508px) {
   .midnav {
+
+    &__logo {
+      width: 100px;
+    }
 
     &__main-img {
       height: auto;
@@ -198,13 +204,14 @@
 @media only screen and (max-width: 425px) {
   .midnav {
 
-    &__text-block {
-      width: 100%;
-    }
+    &__ul {
+      &_left {
+        display: none;
+      }
 
-    &__text-block {
-      padding-left: 20px;
-      padding-top: 30px;
+      &_bars {
+        margin-left: auto;
+      }
     }
 
     &__button-position {
@@ -218,14 +225,10 @@
 
     &__ul {
       padding-top: 15px;
-
-      &_left {
-        padding-left: 20px;
-      }
     }
 
     &__text-block {
-      padding-left: 20px;
+      padding: 0;
       font-size: 15px;
 
       &_red {

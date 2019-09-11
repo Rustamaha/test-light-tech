@@ -11,12 +11,12 @@ export default class Products extends React.Component {
     onFetchProducts();
   }
 
-  /*componentDidUpdate(prevProps) {
+  componentDidUpdate(prevProps) {
     if (this.props.products !== prevProps.products) {
       const { onFetchProducts } = this.props;
       onFetchProducts();
     }
-  }*/
+  }
 
 	renderSushi() {
 		const { products } = this.props;
